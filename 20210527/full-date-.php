@@ -6,6 +6,7 @@
     echo "full date is ".date("Y-M-d")."<br>";
     echo "full date is ".date("Y.M.d")."<br>";
     echo "day in the year ".date("z")."<br>";
-    echo "week of the year ".date("t")."<br>";//for 365 days
+    echo "week of the year ".date("W")."<br>";
+    echo "days in month ".date("t")."<br";
     echo "is this leap year ".date("L");//for leap year
 ?>
