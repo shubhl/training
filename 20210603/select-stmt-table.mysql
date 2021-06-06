@@ -1,0 +1,12 @@
+   #https://paiza.io/projects/HN189cnBL9Gg-qrsSS-Aig?language=mysql
+   create database personal;
+    show databases;
+    
+    create table Test(ID int NOT NULL,LastName varchar(255) NOT NULL,FirstName varchar(255),Age int,CHECK (Age>=18));
+    insert into  Test(ID , LastName , FirstName , Age) 
+                     values (1 , "lad", "shubham ", 20),
+                            (2 , "chavan", "sunil  ", 23);
+    select * from Test;
+    -- Your code here!
+    select LastName from Test;
+    
