@@ -1,0 +1,14 @@
+  #https://paiza.io/projects/X4gB5PhxSahohqDadMlD4g?language=mysql
+  create table student(id integer, name varchar(100),gender varchar(1), phone varchar(10),age integer);
+    insert into student (id, name , gender,phone,age) 
+    values(1, "shubham lad", "m","889976",19),
+    (2 ,"sarita kumari ","f","889977",20),
+    (3, "sunil choudary", "m","904890",21),
+    (4,"anil kamble ", "m","987654",20),
+    (5, "disha khan", "F","898765",22);
+    
+   select * from student
+   where gender= "M";
+    
+    -- Your code here!
+    
