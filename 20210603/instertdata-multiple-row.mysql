@@ -1,0 +1,7 @@
+ #https://paiza.io/projects/JyAs0ve3eMNFvoqtI-21YQ?language=mysql
+ create table customers(id integer, title varchar(100) , age integer(10), gender varchar(50));
+    insert into customers(id, title ,age , gender )
+    values(1, "shubham" , 20 , "M"),(2 , "sunil" , 23 , "M"),(3 , "sajan", 20 , "M"),(4 , "sunita", 21 , "F" );
+select * from customers;
+-- Your code here!
+ select title from customers;
