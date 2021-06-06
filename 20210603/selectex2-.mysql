@@ -1,0 +1,8 @@
+ #https://paiza.io/projects/pLnj-7GiRR2-FGH_178tOA?language=mysql
+ create table customers (CustomerID integer NOT null ,CustomerName varchar(50), ContactName varchar(50),	Address varchar(50), city varchar(20), PostalCode integer,	Country varchar(50));
+    insert into customers (CustomerID, CustomerName, ContactName,	Address   ,	City  , PostalCode ,	Country) 
+    values(1, "Alfreds Futterkiste",	"Maria Anders",	"Obere Str.57",	"Berlin",	12209,	"Germany"),
+    (2 , "shubham pankaj lad", "shubham", "mumbai.72", "chandivali", 400072, "indian" ),
+    (3 , "sunil vishwkarma", "sunil", "mumbai.20", "chandivali" , 400072, "indian");
+    select*from customers;    
+-- Your code here!
