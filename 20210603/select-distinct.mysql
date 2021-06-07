@@ -1,0 +1,11 @@
+ #https://paiza.io/projects/Lo2MHRDFMwcu38Q93bJqnA?language=mysql  
+     create table Test(ProductID Integer,	ProductName varchar(50),	SupplierID integer,	CategoryID integer,	Unit varchar(50),	Price decimal);
+    
+    insert into Test(ProductID, ProductName,SupplierID,	CategoryID,	Unit,	Price)
+    
+          values (1,"shubham",1,1,"10 boxes x 20 bags",19),(2, "ankesh",	1,	1,	"10 boxes x 20 bags", 18.55),(3,"sanket",1,1,"24 - 12 oz bottles",33);
+          
+    select*from Test ;
+     
+    select distinct (Price) from Test; 
+
