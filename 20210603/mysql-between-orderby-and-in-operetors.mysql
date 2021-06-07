@@ -1,0 +1,15 @@
+#https://paiza.io/projects/gOC7FRvVEVNxHhozuUAQMQ?language=mysql
+ create table Test(ProductID Integer,	ProductName varchar(50),	SupplierID integer,	CategoryID integer,	Unit varchar(50),	Price decimal);
+    
+    insert into Test(ProductID, ProductName,SupplierID,	CategoryID,	Unit,	Price)
+    
+          values(1, "Chais",	1,	1,	"10 boxes x 20 bags", 18.55),(2,"Chang",1,1,"24 - 12 oz bottles",19),(3,"Aniseed Syrup",1,2,"12 - 550 ml bottles",10);
+    
+    select * from Test
+    where price BETWEEN 10 and 20 and CategoryID  IN (1,2);
+    
+      select * from Test
+    where price BETWEEN 10 and 20
+    order by price;
+    -- Your code here!
+
