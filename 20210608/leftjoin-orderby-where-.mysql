@@ -1,0 +1,30 @@
+#https://paiza.io/projects/Y0pled6-p4aHmZp1OirDxw?language=mysql
+create table  city (cid int not null ,cityname varchar (50), PRIMARY KEY (cid));
+             insert into city(cid , cityname) values (1, "mumbai"),(2,"delhi"),(3,"nagpur"),(4,"mumbai");
+             select*from city;
+    
+    create table student(id integer, name varchar(100),gender varchar(1), phone varchar(10),age integer,DOB date,citys int ,
+    PRIMARY KEY (id),foreign key (citys) references city(cid) );
+   
+    insert into student (id, name , gender,phone,age,DOB,citys) 
+        values(1, "shubham lad", "m","889976",19,"2000/12/4",2),
+        (2 ,"sarita kumari ","f","889977",20,"2000/4/15",4),
+        (3, "sunil choudary", "m","904890",21,"2000/10/20",0),
+        (4,"anil kamble ", "m","987654",20,"2000/9/20",1),
+         (5,"sunisha sigh","f","908767",23,"1997/9/21",3);
+        
+        
+             
+             select S.id, S.name , S.gender,S.phone,S.age,S.DOB,C.cityname 
+             from student S 
+             left join city C
+             on S.Citys=C.cid
+             order by S.name ASC ;
+             
+              select S.id, S.name , S.gender,S.phone,S.age,S.DOB,C.cityname 
+             from student S 
+             left join city C
+             on S.Citys=C.cid
+             where S.gender="m" ;
+             
+             
